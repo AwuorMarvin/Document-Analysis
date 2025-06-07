@@ -32,5 +32,8 @@ streamlit run src/app.py
 
 - The app runs all analysis locally; no data is sent to external servers.
 - Make sure your `.venv` or other virtual environment folders are excluded from git using `.gitignore`.
+- **Model input length:** If your document or question is very long, you may see an error like  
+  `Token indices sequence length is longer than the specified maximum sequence length for this model (5311 > 512)`.  
+  This means the underlying language model cannot process such a long input at once. Try using shorter documents or asking more focused questions.
 
 ---
